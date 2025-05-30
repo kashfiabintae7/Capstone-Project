@@ -64,6 +64,12 @@ body {
 .logo-container img {
   height: 100px;
   object-fit: contain;
+  margin-left: 20px;
+}
+
+.logo-container img:hover {
+  height: 110px;
+  transition: 0.2s all;
 }
 
 .nav-links {
