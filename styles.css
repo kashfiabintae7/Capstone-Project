@@ -22,9 +22,11 @@ body {
   display: flex;
   align-items: center;
   padding: 0 20px;
+  width: 100%;
 }
 
 .topnav a {
+  width: 100%;
   height: 80px;
   font-size: 12px;
   color: white;
@@ -94,6 +96,44 @@ body {
   text-shadow: 0 0 10px black;
 }
 
+.sticky {
+  background-image: url(https://papers.co/wallpaper/papers.co-nu10-food-art-dessert-nature-36-3840x2400-4k-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 20px rgb(64, 103, 243);
+  font-size: 30px;
+  position: sticky;
+  padding: 70px;
+  margin-top: 40px;
+  text-align: center;
+  border-width: 10px;
+  border-style: ridge;
+  border-color: rgb(130, 181, 215);
+  box-shadow: 0px 0px 30px rgba(115, 99, 118, 0.992);
+}
+
+dt {
+  font-size: 35px;
+  color: rgb(185, 189, 194);
+  text-shadow: 0 0 10px purple;
+}
+
+dd {
+  font-size: 28px;
+  color: rgb(206, 203, 203);
+  text-shadow: 0 0 20px rgb(222, 116, 222);
+}
+h1:hover {
+  color: azure;
+  text-shadow: 0px 0px 30px rgb(101, 163, 234);
+  border-radius: 15px;
+  font-size: 65px;
+}
+b {
+  text-shadow: 0 0 25px rgba(67, 204, 249, 0.741);
+}
+
 * {
   box-sizing: border-box;
   scrollbar-color: transparent transparent;
@@ -131,7 +171,7 @@ li {
 
 .carousel__viewport {
   position: absolute;
-  top: 2;
+  top: 100px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -145,13 +185,14 @@ li {
 .carousel__slide {
   position: relative;
   flex: 0 0 100%;
-  width: 95%;
+  width: 100%;
   counter-increment: item;
 }
 
 .carousel__slide img {
+  margin-top: 0;
   width: 100%;
-  height: 700px;
+  height: auto;
   top: 0%;
   object-fit: cover;
   display: block;
@@ -213,4 +254,59 @@ li {
   border-radius: 50%;
   font-size: 0;
   transition: transform 0.1s;
+}
+
+.footer {
+  background-color: rgb(101, 100, 124);
+  padding: 40px;
+  color: black;
+  text-shadow: 0 0 1px white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box {
+  flex: 1 1 200px;
+}
+
+.footer-box h4,
+.footer-box h3 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footer-box ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid black;
+  color: black;
+  font-size: 14px;
 }
